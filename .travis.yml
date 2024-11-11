@@ -1,0 +1,8 @@
+language: cpp
+os: linux
+dist: focal
+
+script:
+  - echo "Checking if test_travis.txt exists"
+  - if [ ! -f "test_travis.txt" ]; then echo "test_travis.txt not found"; exit 1; fi
+  - wc -l test_travis.txt
