@@ -1,7 +1,11 @@
 language: cpp
-os: linux
-dist: focal
-
+sudo: required
+dist: bionic
+compiler:
+- clang
+os:
+- linux
+ruby: 2.2.0
 script:
   - echo "Checking if test_travis.txt exists"
   - if [ ! -f "test_travis.txt" ]; then echo "test_travis.txt not found"; exit 1; fi
