@@ -1,8 +1,8 @@
 language: cpp
-dist: bionic
-os:
-- linux
+os: linux
+dist: focal
+
 script:
-  - echo "Checking if test_travis.txt exists"
-  - if [ ! -f "test_travis.txt" ]; then echo "test_travis.txt not found"; exit 1; fi
+  - echo "Проверка существования файла test_travis.txt"
+  - if [ ! -f "test_travis.txt" ]; then echo "Файл test_travis.txt не найден"; exit 1; fi
   - wc -l test_travis.txt
