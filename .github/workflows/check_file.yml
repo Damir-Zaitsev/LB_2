@@ -1,9 +1,6 @@
 name: Проверка наличия файла test_GA.txt
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   check-file:
@@ -11,9 +8,9 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Check for test_GA.txt
+    - name: Проверка файла test_GA.txt
       run: |
         if [ -f "test_GA.txt" ]; then
           echo "Файл test_GA.txt найден."
