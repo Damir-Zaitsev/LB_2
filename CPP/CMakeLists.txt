@@ -16,6 +16,6 @@ target_link_libraries(Lb_1.4 operations)
 install(TARGETS Lb_1.4 DESTINATION bin)
 
 # Установка man-страницы
-set(CMAKE_INSTALL_PREFIX "/usr")
+set(CMAKE_INSTALL_PREFIX "/usr/temp")
 set(MAN_DIR "${CMAKE_INSTALL_PREFIX}/share/man/man1")
 install(FILES ../Lb_1.4.1 DESTINATION ${MAN_DIR})
