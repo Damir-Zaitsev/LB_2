@@ -1,4 +1,4 @@
-name: Build and Test
+name: Сборка и тестирование
 
 on: push
 
@@ -21,3 +21,8 @@ jobs:
         cd build
         cmake ..
         make
+
+    - name: Тестирование проекта
+      run: |
+        cd build
+        ./CPP/Lb_1.4 -help
