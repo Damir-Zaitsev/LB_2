@@ -25,4 +25,4 @@ jobs:
     - name: Тестирование проекта
       run: |
         cd build
-        ./CPP/Lb_1.4 -help
+        ./CPP/Lb_1.4 --help
